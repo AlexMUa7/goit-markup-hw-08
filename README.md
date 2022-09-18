@@ -1,5 +1,10 @@
 # goit-markup-hw-08
 
+breakpoints
+480px - mobile breakpoint
+768px - tablet breakpoint
+1200px - desktop breakpoint
+
 // utils styles
 @import './utils/vars';
 @import './utils/visually-hidden';

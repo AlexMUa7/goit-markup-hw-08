@@ -37,7 +37,7 @@
         <ul class="header-contacts list">
           <li class="item">
             <a href="malito:info@devstudio.com" class="link"
-              ><svg width="16" height="12" class="icons-header">
+              ><svg width="16" height="12" class="icons-header envelope">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-envelope"
                 ></use></svg
@@ -46,7 +46,7 @@
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="link"
-              ><svg width="10" height="16" class="icons-header">
+              ><svg width="10" height="16" class="icons-header smartphone">
                 <use
                   href="./images/icons.svg/symbol-defs.svg#icon-smartphone"
                 ></use></svg
@@ -54,9 +54,19 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn-icon" width="40" height="40">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
-    <main>
+    <!--<main>
       <section class="section portfolio">
         <div class="container">
           <h1 hidden class="section">Портфолiо</h1>
@@ -360,26 +370,82 @@
         <div>
           <p class="call-to-action">Підпишіться на розсилку</p>
           <form class="subscribe" name="subscribe">
-            <label>
-              <input
-                type="email"
-                name="user-email"
-                placeholder="E-mail"
-                class="form-subscribe-footer"
-              />
-            </label>
+            <input
+              type="email"
+              name="user-email"
+              placeholder="E-mail"
+              class="form-subscribe-footer"
+            />
             <button type="submit" class="subscribe-btn-footer">
               <span class="form-agreement-footer"
                 >Підписатися
                 <svg width="24" height="24" class="icon-send">
                   <use
                     href="./images/icons.svg/symbol-defs.svg#icon-icon-send"
-                  ></use></svg
-              ></span>
+                  ></use>
+                </svg>
+              </span>
             </button>
           </form>
         </div>
       </div>
     </footer>
+    -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-btn menu-toggle js-close-menu">
+        <svg class="menu-btn-icon-close" width="24" height="24">
+          <use href="./images/icons.svg/symbol-defs.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav">
+        <li class="mobile-nav__list">
+          <a href="/index.html" class="mobile-nav__link current">Студiя</a>
+        </li>
+        <li class="mobile-nav__list">
+          <a href="./portfolio.html" class="mobile-nav__link">Портфолiо</a>
+        </li>
+        <li class="mobile-nav__list">
+          <a href="" class="mobile-nav__link">Контакты</a>
+        </li>
+      </ul>
+      <!-- <div class="mobile-wrap"> -->
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__list">
+          <a
+            href="malito:info@devstudio.com"
+            class="mobile-contacts__link email"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="mobile-contacts__list">
+          <a href="tel:+380961111111" class="mobile-contacts__link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/modal.js"></script>
   </body>
 </html>
