@@ -1,0 +1,52 @@
+.social-icons {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    gap: 22px;
+    background-color: transparent;
+    fill: #afb1b8;
+    align-items: center;
+    justify-content: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+                fill: #ffffff;
+                background-color: #2196f3;
+            }
+}
+
+.social-iist {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+}
+
+
+/*Footer social icons*/
+
+
+
+.footer.social-icons {
+    display: flex;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    fill: #ffffff;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,&:focus {
+                background: #2196f3;
+            }
+}
+
+
+
+.footer.socials-icon.list {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,99 @@
+.site-nav.list {
+    display: flex;
+    & .current::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: #2196f3;
+            margin-top: 47px;
+            position: absolute;
+        }
+}
+
+.site-nav.list.header {
+    display: flex;
+    margin-right: 30px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .item {
+    display: flex;
+    &:not(:last-child) {
+            margin-right: 50px;
+        }
+}
+
+.site-nav .link {
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    display: flex;
+    padding: 32px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+.site-nav.list a:hover,
+.site-nav.list a::focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+    position: relative;
+}
+
+.site-nav.list .type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+
+
+/*Site navigation footer*/
+
+.nav-footer {
+    color: var(--title-header);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.nav-footer a {
+    color: var(--title-header);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+                color: var(--accent-color);
+            }
+}
+
+
+.nav-footer.list .contacts {
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus, &:hover {color: var(--accent-color);
+        }
+}
+
