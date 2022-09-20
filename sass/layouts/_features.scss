@@ -1,68 +1,66 @@
 .section.features {
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
 
-    @media screen and (max-width: 1199px) {
-            padding: 60px 0;
-    
-        }
-
-                @media screen and (min-width: 1200px) {
-                    padding: 0;
-        
-                }
-        
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    padding: 0;
+  }
 }
-
 
 .features__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-         @supports not((gap: 30px)) {
-            margin: 15px;
-}
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  @supports not (
+    (
+      gap: 30px,
+    )
+  ) {
+    margin: 15px;
+  }
 }
 
 .features__item {
-        margin: 15px;
-                  @media screen and (min-width: 768px) {
-                    flex-basis: calc((100% - 60px)/2);
-                     
-                  }
-        
-                  @media screen and (min-width: 1200px) {
-                    flex-basis: calc((100% - 120px)/4);
-                  }
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .features__description {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    display: block;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  display: block;
 }
 
 .features__title {
-    color: #212121;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-top: 0%;
-    margin-bottom: 10px;
-    @media screen and (max-width: 767px) {
-        text-align: center;
-    }
+  color: #212121;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 0%;
+  margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
-
 .features__wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
 }
 
 /*
