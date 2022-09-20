@@ -20,10 +20,10 @@
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    margin-bottom: 50px;
   }
 }
 
