@@ -82,12 +82,13 @@
 /* Позиционирвоание элементов*/
 
 .portfolio-info {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  background: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 .portfolio-total {
@@ -99,12 +100,17 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 370px;
+  width: 100%;
   height: 294px;
+  padding: 24px;
+  background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 480px) {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio-card:hover .portfolio-about,

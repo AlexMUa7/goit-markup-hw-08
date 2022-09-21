@@ -19,12 +19,6 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-
-  @media screen and (min-width: 1200px) {
-    flex-wrap: nowrap;
-  }
 }
 
 .team-name {
@@ -44,13 +38,9 @@
   border-radius: 0px 0px 4px 4px;
   @media screen and (min-width: 768px) {
     max-width: 354px;
-    font-size: 36px;
-    margin-bottom: 50px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 270px;
-    font-size: 36px;
-    margin-bottom: 50px;
   }
 }
 

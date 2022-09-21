@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
+    text-align: left;
   }
 
   @media screen and (min-width: 1200px) {
@@ -62,11 +63,11 @@
   }
 }
 
-.second-cta-block {
+/*.second-cta-block {
   @media screen and (min-width: 481px) and (max-width: 1199px) {
     margin-top: 60px;
   }
-}
+}*/
 
 .footer.socials-icon.list {
   display: flex;
@@ -79,7 +80,7 @@
 }
 
 .cta-block {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
 }

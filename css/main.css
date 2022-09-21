@@ -61,6 +61,8 @@ textarea {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -615,6 +617,12 @@ ul {
   padding: 0%;
 }
 
+.social-iist .item {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*Footer social icons*/
 .footer.social-icons {
   display: flex;
@@ -698,26 +706,36 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-nav__link:hover, .mobile-nav__link:focus {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .mobile-nav__link.current {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .mobile-nav__list:not(:last-child) {
   margin-bottom: 35.71px;
 }
 
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
 .mobile-contacts__link {
+  font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
 }
 
 .mobile-contacts__link.email {
-  color: #2196F3;
+  color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .mobile-contacts__link.email {
+    font-size: 34px;
+  }
 }
 
 .mobile-contacts__list:not(:last-child) {
@@ -726,21 +744,27 @@ ul {
 
 .menu-btn-icon-close:hover,
 .menu-btn-icon-close:focus {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 .mobile-socials {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 
 .mobile-socials__link {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 .mobile-socials__link:not(:first-child) {
   padding: 10px 10px 10px 0;
+}
+
+.mobile-socials__item {
+  font-weight: 500;
 }
 
 .mobile-socials__item:not(:last-child) {
@@ -769,8 +793,8 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -832,13 +856,9 @@ ul {
 .hero {
   text-align: center;
   padding: 118px 0;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-img_sm.jpg);
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -978,12 +998,15 @@ ul {
 
 /* Позиционирвоание элементов*/
 .portfolio-info {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
-  background: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-info {
+    font-size: 18px;
+  }
 }
 
 .portfolio-total {
@@ -995,12 +1018,19 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 370px;
+  width: 100%;
   height: 294px;
+  padding: 24px;
+  background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .portfolio-about {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio-card:hover .portfolio-about,
@@ -1159,13 +1189,6 @@ item =
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-@media screen and (min-width: 1200px) {
-  .team-list {
-    flex-wrap: nowrap;
-  }
 }
 
 .team-name {
@@ -1186,15 +1209,11 @@ item =
 @media screen and (min-width: 768px) {
   .team-employees {
     max-width: 354px;
-    font-size: 36px;
-    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team-employees {
     max-width: 270px;
-    font-size: 36px;
-    margin-bottom: 50px;
   }
 }
 
@@ -1274,6 +1293,7 @@ item =
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1332,19 +1352,18 @@ item =
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 1199px) {
-  .second-cta-block {
+/*.second-cta-block {
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
     margin-top: 60px;
   }
-}
-
+}*/
 .footer.socials-icon.list {
   display: flex;
   text-align: center;
   justify-content: center;
   gap: 10px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .cta-block {
     margin-bottom: 60px;
   }
