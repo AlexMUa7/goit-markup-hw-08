@@ -6,11 +6,11 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
-    text-align: left;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    text-align: left;
     align-items: baseline;
   }
 }
